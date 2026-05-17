@@ -50,7 +50,7 @@ const Login = ({ onSuccess }) => {
       <div style={{width:360,padding:40,background:T.bgCard,borderRadius:16,border:`1px solid ${T.line}`,boxShadow:"0 8px 32px rgba(26,50,100,0.08)"}}>
         <div style={{textAlign:"center",marginBottom:32}}>
           <div style={{display:"inline-flex",gap:6,marginBottom:12}}><div style={{width:7,height:7,borderRadius:"50%",background:T.gold}}/><div style={{width:7,height:7,borderRadius:"50%",background:T.gold,opacity:.5}}/></div>
-          <div style={{fontFamily:T.disp,fontSize:22,fontWeight:800,color:T.navy}}>中欧基金竞品分析</div>
+          <div style={{fontFamily:T.disp,fontSize:22,fontWeight:800,color:T.navy}}>竞品分析平台</div>
           <div style={{fontSize:12,color:T.text3,marginTop:6}}>请登录后查看</div>
         </div>
         <input value={u} onChange={e=>setU(e.target.value)} placeholder="账号" onKeyDown={e=>e.key==="Enter"&&submit()} style={{width:"100%",padding:"10px 14px",fontSize:14,border:`1px solid ${T.line}`,borderRadius:8,marginBottom:12,outline:"none",boxSizing:"border-box",fontFamily:T.body}}/>
@@ -86,7 +86,7 @@ const Portal = ({ onSelect, onLogout }) => {
       <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",padding:`0 ${padX}px`,height:56,paddingTop:3}}>
         <div style={{display:"flex",alignItems:"center",gap:10}}>
           <span style={{display:"inline-flex",gap:6}}><span style={{width:7,height:7,borderRadius:"50%",background:T.gold}}/><span style={{width:7,height:7,borderRadius:"50%",background:T.gold,opacity:.55}}/></span>
-          <span style={{fontFamily:T.disp,fontSize:17,fontWeight:700,color:T.navy}}>中欧基金</span>
+          <span style={{fontFamily:T.disp,fontSize:17,fontWeight:700,color:T.navy}}>FundPlatform</span>
         </div>
         <button onClick={onLogout} style={{fontSize:12,color:T.text3,background:"none",border:`1px solid ${T.line}`,borderRadius:6,padding:"5px 14px",cursor:"pointer",fontFamily:T.body}}>退出登录</button>
       </div>
@@ -96,7 +96,7 @@ const Portal = ({ onSelect, onLogout }) => {
         <div style={{textAlign:"center",marginBottom:isMob?32:48,...fade(.05)}}>
           <div style={{display:"inline-flex",alignItems:"center",gap:10,marginBottom:18}}>
             {!isMob && <div style={{width:32,height:1,background:T.goldLine}}/>}
-            <span style={{fontSize:10,fontWeight:700,letterSpacing:".3em",color:T.gold}}>ZHONG OU FUND · COMPETITIVE ANALYSIS</span>
+            <span style={{fontSize:10,fontWeight:700,letterSpacing:".3em",color:T.gold}}>FUND COMPETITIVE ANALYSIS</span>
             {!isMob && <div style={{width:32,height:1,background:T.goldLine}}/>}
           </div>
           <h1 style={{fontFamily:T.disp,fontSize:isMob?32:52,fontWeight:800,color:T.navy,margin:0,letterSpacing:"-.03em",lineHeight:1.1}}>竞品分析平台</h1>
@@ -122,7 +122,7 @@ const Portal = ({ onSelect, onLogout }) => {
         </div>
       </div>
 
-      <div style={{textAlign:"center",padding:"20px 0 32px",fontSize:11,color:T.text3,letterSpacing:".05em"}}>中欧基金 · 内部使用</div>
+      <div style={{textAlign:"center",padding:"20px 0 32px",fontSize:11,color:T.text3,letterSpacing:".05em"}}>内部使用</div>
     </div>
   );
 };
