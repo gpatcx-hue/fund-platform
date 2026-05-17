@@ -54,6 +54,19 @@ async function loadData() {
   BENCHMARKS = data.benchmarks || {};
   DATA_DATE = data.updatedAt || '';
   CATS.sort((a, b) => CAT_ORDER.indexOf(a.id) - CAT_ORDER.indexOf(b.id));
+
+  // 超额为空时用绝对收益填充（基准数据缺失时的降级方案）
+  for (const funds of Object.values(MF)) {
+    for (const f of funds) {
+      if (f.abs) {
+        if (!f.exc) f.exc = {};
+        for (const [k, v] of Object.entries(f.abs)) {
+          if (f.exc[k] == null && v != null) f.exc[k] = v;
+        }
+      }
+    }
+  }
+
   DATA_LOADED = true;
 }
 
