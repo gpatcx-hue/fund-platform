@@ -252,7 +252,7 @@ const Home = () => {
         {/* 标题 */}
         <div style={{textAlign:"center",padding:`${isMob?"28px":isTab?"40px":"56px"} 0 ${isMob?"20px":"32px"}`,...fadeUp(entered, .05)}}>
           {!isMob && <div style={{display:"inline-flex",alignItems:"center",gap:10,marginBottom:18}}><div style={{width:isTab?24:32,height:1,background:`linear-gradient(90deg,transparent,${T.goldLine})`}}/><span style={{fontSize:10,fontWeight:700,letterSpacing:".3em",color:T.gold,whiteSpace:"nowrap"}}>QUANT FUND COMPETITIVE ANALYSIS</span><div style={{width:isTab?24:32,height:1,background:`linear-gradient(90deg,${T.goldLine},transparent)`}}/></div>}
-          <h1 style={{fontFamily:T.disp,fontSize:isMob?32:isTab?44:"clamp(44px,5.5vw,58px)",fontWeight:800,color:T.navy,margin:0,letterSpacing:"-.03em",lineHeight:1.1}}>中欧量化竞品分析</h1>
+          <h1 style={{fontFamily:T.disp,fontSize:isMob?32:isTab?44:"clamp(44px,5.5vw,58px)",fontWeight:800,color:T.navy,margin:0,letterSpacing:"-.03em",lineHeight:1.1}}>量化竞品分析</h1>
           <p style={{fontSize:isMob?12:14,color:T.text2,marginTop:isMob?8:14,letterSpacing:".08em"}}>超额能力 · 同类对比 · 数据驱动</p>
         </div>
 
@@ -928,7 +928,7 @@ const ManagerPage = () => {
             <h1 style={{fontFamily:T.disp,fontSize:isMob?32:44,fontWeight:800,color:"#fff",margin:0,letterSpacing:"-.02em"}}>{name}</h1>
             {leaderInfo && <div style={{fontSize:14,color:T.gold,marginTop:8}}>{leaderInfo.title}</div>}
             <div style={{fontSize:13,color:"rgba(255,255,255,0.65)",marginTop:14,lineHeight:1.8,maxWidth:680}}>
-              {leaderInfo?.bio || m?.desc || "中欧基金量化团队基金经理"}
+              {leaderInfo?.bio || m?.desc || "量化团队基金经理"}
             </div>
             <div style={{display:"flex",gap:isMob?20:32,marginTop:28,flexWrap:"wrap"}}>
               <div>
